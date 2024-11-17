@@ -26,7 +26,7 @@ func (s *DefaultNviService) VerifyIdentity(request models.NviRequest) (bool, err
 	defer resp.Body.Close()
 
 	var soapResponse models.NviResponse
-	if err := xml.NewDecoder(resp.Body).Decode(&soapResponse); err != nil { // resp yerine resp.Body kullanılıyor
+	if err = xml.NewDecoder(resp.Body).Decode(&soapResponse); err != nil { // resp yerine resp.Body kullanılıyor
 		return false, err
 	}
 
@@ -43,7 +43,7 @@ func (s *DefaultNviService) VerifyForeignIdentity(request models.ForeignNviReque
 	defer resp.Body.Close()
 
 	var soapResponse models.ForeignNviResponse
-	if err := xml.NewDecoder(resp.Body).Decode(&soapResponse); err != nil { // resp yerine resp.Body kullanılıyor
+	if err = xml.NewDecoder(resp.Body).Decode(&soapResponse); err != nil { // resp yerine resp.Body kullanılıyor
 		return false, err
 	}
 
