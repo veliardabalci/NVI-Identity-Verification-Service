@@ -25,7 +25,7 @@ The API will now be accessible at `http://localhost:8080`.
 ## API Usage
 
 ### Turkish Citizens Verification
-- **Endpoint:** `POST /check/turkish`
+- **Endpoint:** `POST api/check/turkish`
 - **Body:**
 ```json
 {
@@ -38,7 +38,7 @@ The API will now be accessible at `http://localhost:8080`.
 
 - **cURL:**
 ```bash
-curl -X POST http://localhost:8080/check/turkish \
+curl -X POST http://localhost:8080/api/check/turkish \
 -H "Content-Type: application/json" \
 -d '{"id": "12345678901", "name": "Ahmet", "surname": "Yılmaz", "birth_year": "1985"}'
 ```
@@ -50,7 +50,7 @@ curl -X POST http://localhost:8080/check/turkish \
 ```
 
 ### Foreign Identity Verification
-- **Endpoint:** `POST /check/foreign`
+- **Endpoint:** `POST api/check/foreign`
 - **Body:**
 ```json
 {
@@ -65,7 +65,7 @@ curl -X POST http://localhost:8080/check/turkish \
 
 - **cURL:**
 ```bash
-curl -X POST http://localhost:8080/check/foreign \
+curl -X POST http://localhost:8080/api/check/foreign \
 -H "Content-Type: application/json" \
 -d '{"id": "987654321", "name": "John", "surname": "Doe", "birth_day": 15, "birth_month": 6, "birth_year": 1990}'
 ```
