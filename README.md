@@ -9,7 +9,7 @@ This project provides an API for identity verification of Turkish citizens and f
 ### 1. Clone the Project
 ```bash
 git clone https://github.com/veliardabalci/NVI-Identity-Verification-Service.git
-cd nvi-identity-verification
+cd NVI-Identity-Verification-Service
 ```
 
 ### 2. Run with Docker
